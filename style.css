@@ -141,7 +141,7 @@ section {
 }
 
 #bio p {
-  font-size: larger;
+  font-size: 1.25rem;
 }
 
 .AboutMe img {
@@ -192,6 +192,10 @@ section {
 }
 */
 
+.mobile {
+  display: none;
+}
+
 .footerLink {
   text-decoration: none;
   color: #848a8e;
@@ -200,4 +204,95 @@ section {
 .footerLink:hover {
   transition-delay: 0.25s ease-in;
   color: #967fb9;
+}
+
+@media only screen and (max-width: 900px) {
+  .AboutMe img {
+    display: none;
+  }
+
+  #bio {
+    width: 100%;
+  }
+
+  .cardRow {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+  }
+
+  .card {
+    box-shadow: 0 0 1rem 0.2rem #eef1f3;
+    border-radius: 0.5rem;
+    background-color: white;
+    padding: 1.5rem;
+    padding-bottom: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  #bio p {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+  }
+  #bio p {
+    font-size: 0.8rem;
+  }
+  #bio {
+    padding-bottom: 0.3rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  .desktopIcon {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 0.6rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+  h7 {
+    font-size: 0.7rem;
+  }
+  ul {
+    font-size: 0.7rem;
+    margin-left: -7vw;
+  }
 }
